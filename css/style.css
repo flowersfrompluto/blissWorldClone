@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+nav .top{
+    background: linear-gradient(254.83deg, #B497E3 10.36%, #EFBFE6 89.03%);
+}
+nav p{
+    text-align: center;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.icons{
+    margin-left: 450px;
+}
+.icons .search,
+.icons .user,
+.icons .bag{
+    padding: 0px 10px;
+}
+li {
+    list-style: none;
+}
+.navMain {
+    justify-content: space-between;
+    background-color: #8CD0E3;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+nav .navMain .links{
+    width: 50%;
+    margin: auto;
+}
+.navMain li{
+    padding: 25px 15px 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.navIcons{
+    align-items: center;
+    margin-left: 45%;
+}
+
+/* ROW 1 */
+
+.row1 img{
+    width: 100%;
+}
+
+/* ROW 2 */
+
+.row2 h1{
+    padding: 40px;
+    text-align: center;
+    font-family: "Cera Stencil PRO";
+    font-size: 35px;
+}
+
+.row2 .grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.row2 .grid img{
+    width: 320px;
+}
+.row2 h3{
+    font-family: "Cera Stencil PRO";
+    padding-top: 15px;
+}
+.row2 p{
+    padding: 10px 25px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* ROW 3 */
+
+.row3{
+    padding: 50px 0px;
+}
+.row3 .col1{
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    padding-top: 120px;
+    background-image: url(../img/bliss-bright-background.png);
+    background-repeat: no-repeat;
+}
+.row3 .col1 .inside{
+    background-color: rgba(255, 255, 255, 0.74);
+    /* height: 250px; */
+    padding: 70px;
+    width: 80%;
+    margin: auto;
+    height: 70%;
+}
+.row3 .col1 .inside h1{
+    font-family: "Cera Stencil PRO";
+}
+.row3 .col1 .inside p{
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px;
+}
+.row3 .col1 .inside button{
+    background-color: #FA9000;
+    border: none;
+    font-size: 25px;
+    font-family: "Cera Stencil PRO";
+    padding: 5px 25px;
+    box-shadow: 0px 5px #FFD680;
+}
+.row3 .col2{
+    width: 50%;
+}
+.row3 .col2 img{
+    width: 100%;
+}
+
+/* ROW 4 */
+
+.row4{
+    padding-top: 50px;
+}
+.row4 .col1{
+    width: 50%;
+}
+.row4 .col1 img{
+    width: 100%;
+}
+
+.row4 .col2{
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    padding-top: 150px;
+    background-image: url(../img/bliss-block-party-bg.png);
+    background-repeat: no-repeat;
+}
+
+.row4 .col2 h1{
+    font-family: "Cera Stencil PRO";
+}
+.row4 .col2 p{
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px 150px;
+}
+.row4 .col2 button{
+    background-color: #0047BB;
+    border: none;
+    font-size: 25px;
+    font-family: "Cera Stencil PRO";
+    padding: 5px 25px;
+    color: #ffffff;
+    box-shadow: 0px 5px #ffffff;
+}
+
+/* ROW 5 */
+
+.row5{
+    padding: 50px 0px;
+}
+.row5 .col1{
+    /* text-align: center; */
+    align-items: center;
+    width: 50%;
+    padding-top: 150px;
+}
+
+.row5 .col1 h1{
+    padding-left: 120px;
+    font-family: "Cera Stencil PRO";
+}
+.row5 .col1 p{
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px 120px;
+}
+.row5 .col1 .btnRow5{
+    padding-left: 120px;
+}
+
+.row5 .col1 button{
+    background-color: #0047BB;
+    border: none;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: "Cera Stencil PRO";
+    padding: 5px 25px;
+    box-shadow: 0px 5px #FEDB00;
+}
+.row5 .col2{
+    width: 50%;
+}
+.row5 .col2 video{
+    width: 95%;
+    padding: 15px;
+}
+
+/* ROW 6 */
+
+.row6{
+    padding-top: 50px;
+}
+.row6 .col1{
+    width: 50%;
+}
+.row6 .col1 img{
+    width: 100%;
+}
+
+.row6 .col2{
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    padding-top: 150px;
+    background-image: url(../img/bliss-creulty-free-bg.png);
+    background-repeat: no-repeat;
+}
+
+.row6 .col2 h1{
+    font-family: "Cera Stencil PRO";
+    padding: 0px 100px;
+}
+.row6 .col2 p{
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px 150px;
+}
+.row6 .col2 button{
+    background-color: #ffffff;
+    border: none;
+    font-size: 25px;
+    font-family: "Cera Stencil PRO";
+    padding: 5px 25px;
+    color: #000;
+    box-shadow: 0px 5px #8CD0E3;
+}
+
+/* ROW 7 */
+
+.row7 h1{
+    padding: 40px 0px 10px 0;
+    text-align: center;
+    font-family: "Cera Stencil PRO";
+    font-size: 35px;
+}
+.row7 .txtRow7{
+    /* margin-top: -30px; */
+    padding-bottom: 45px;
+    text-align: center;
+    font-size: 18px;
+    /* font-weight: 600; */
+}
+
+.row7 .grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.row7 .grid img{
+    width: 320px;
+}
+.row7 h3{
+    font-family: "Cera Stencil PRO";
+    padding-top: 15px;
+}
+.row7 .grid p{
+    padding: 10px 25px;
+    font-size: 15px;
+    font-style: italic;
+}
+.row7 .rating{
+    /* background-color: #FA9000; */
+    width: 320px;
+    margin: auto;
+    padding-left: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.row7 .rating .flex span{
+    padding-left: 10px;
+}
+.row7 .rating .star .checked {
+    color: #B497E3;
+}
+.row7 .prod{
+    margin-top: -35px;
+}
+aside{
+    padding: 10px 0px;
+    position: sticky;
+    width: 117px;
+    background-color: #000;
+    color: #ffffff;
+    font-size: 17px;
+}
+.row7 .btnRow7{
+    justify-content: center;
+    padding-top: 50px;
+}
+.row7 button{
+    background-color: #8CD0E3;
+    border: none;
+    font-size: 25px;
+    font-family: "Cera Stencil PRO";
+    padding: 5px 25px;
+    color: #000;
+    text-align: center;
+}
+
+/* ROW 8 */
+
+.row8{
+    text-align: center;
+    padding: 130px 100px 50px 100px;
+}
+.row8 h1{
+    font-family: "Cera Stencil PRO";
+    font-size: 40px;
+}
+.row8 p{
+    padding-top: 10px;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+/* ROW 9 */
+
+.row9 {
+    background: linear-gradient(254.83deg, #B497E3 10.36%, #EFBFE6 89.03%);
+    padding: 10px;
+}
+.row9 .txtRow9{
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+.row9 p{
+    font-weight: 600;
+    font-size: 20px;
+}
+.row9 span{
+    font-size: 35px;
+    font-weight: 100;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #8CD0E3;
+}
+footer .left{
+    padding: 35px;
+    width: 90%;
+}
+footer .left h1{
+    font-size: 25px;
+    font-family: "Cera Stencil PRO";
+    padding-bottom: 25px;
+}
+
+footer .top .col1,
+footer .top .col2,
+footer .top .col3,
+footer .top .col4
+{
+    padding: 20px;
+}
+footer .top li{
+    padding: 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+footer .top li input{
+    width: 350px;
+    padding: 15px 0px;
+}
+footer .top li button{
+    padding: 15px 35px;
+}
+footer .top li p{
+    font-size: 12px;
+}
+footer .top li p a{
+    text-decoration: underline;
+    color: #0047BB;
+}
+footer .bottom p{
+    font-size: 14px;
+    padding-left: 20px;
+} 
+
+footer .right{
+    align-content: center;
+    width: 10%;
+    background-color: #DFDDEB;
+}
+footer .right p{
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    font-weight: 500;
+}
+footer .right .socials div{
+    padding: 5px 60px;
+}
+footer .right .socials img{
+    width: 100%;
+}
+
+footer .right .corp{
+    padding: 5px 20px;
+    margin-left: 20px;
+}
+footer .right .corp img{
+    width: 90%;
+}
