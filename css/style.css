@@ -6,75 +6,171 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
 
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-nav .top{
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #000;
+    font: inherit;
+    padding-bottom: 20px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    padding-top: 25px;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.column {
+    float: left;
+    padding: 25px;
+}
+.rowLeft,
+.rowRight{
+    width: 50%;
+}
+.rowRight{
+    padding: 70px 30px 30px 30px;
+}
+.rowRight .left,
+.rowRight .right{
+    padding: 0px 15px;
+}
+.rowRight .left h3,
+.rowRight .right h3{
+    padding-top: 25px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.rowRight .left p,
+.rowRight .right p{
+    font-style: italic;
+    font-weight: 300;
+}
+
+.rowRight .left img,
+.rowRight .right img{
+    width: 100%;
+}
+.column a {
+    color: black;
+    padding: 7px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.column h3 {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+nav .top {
     background: linear-gradient(254.83deg, #B497E3 10.36%, #EFBFE6 89.03%);
 }
-nav p{
+
+nav p {
     text-align: center;
     padding: 15px;
     font-weight: 500;
     font-size: 16px;
 }
 
-.icons{
+.icons {
     margin-left: 450px;
 }
+
 .icons .search,
 .icons .user,
-.icons .bag{
+.icons .bag {
     padding: 0px 10px;
 }
+
 li {
     list-style: none;
 }
+
 .navMain {
     justify-content: space-between;
     background-color: #8CD0E3;
     padding: 20px 20px 0px 20px;
     text-align: center;
 }
-nav .navMain .links{
-    width: 50%;
+
+nav .navMain .links {
+    justify-content: center;
+    width: 60%;
     margin: auto;
 }
-.navMain li{
-    padding: 25px 15px 10px 15px;
+
+.navMain li {
+    padding: 25px 20px;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
 }
-.navIcons{
+
+.navIcons {
     align-items: center;
     margin-left: 45%;
 }
 
 /* ROW 1 */
 
-.row1 img{
+.row1 img {
     width: 100%;
 }
 
 /* ROW 2 */
 
-.row2 h1{
+.row2 h1 {
     padding: 40px;
     text-align: center;
     font-family: "Cera Stencil PRO";
     font-size: 35px;
 }
 
-.row2 .grid{
+.row2 .grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 90%;
@@ -82,14 +178,16 @@ nav .navMain .links{
     text-align: center;
 }
 
-.row2 .grid img{
+.row2 .grid img {
     width: 320px;
 }
-.row2 h3{
+
+.row2 h3 {
     font-family: "Cera Stencil PRO";
     padding-top: 15px;
 }
-.row2 p{
+
+.row2 p {
     padding: 10px 25px;
     font-size: 15px;
     font-style: italic;
@@ -97,10 +195,11 @@ nav .navMain .links{
 
 /* ROW 3 */
 
-.row3{
+.row3 {
     padding: 50px 0px;
 }
-.row3 .col1{
+
+.row3 .col1 {
     text-align: center;
     align-items: center;
     width: 50%;
@@ -108,23 +207,26 @@ nav .navMain .links{
     background-image: url(../img/bliss-bright-background.png);
     background-repeat: no-repeat;
 }
-.row3 .col1 .inside{
+
+.row3 .col1 .inside {
     background-color: rgba(255, 255, 255, 0.74);
-    /* height: 250px; */
     padding: 70px;
     width: 80%;
     margin: auto;
     height: 70%;
 }
-.row3 .col1 .inside h1{
+
+.row3 .col1 .inside h1 {
     font-family: "Cera Stencil PRO";
 }
-.row3 .col1 .inside p{
+
+.row3 .col1 .inside p {
     font-size: 18px;
     line-height: 30px;
     padding: 15px;
 }
-.row3 .col1 .inside button{
+
+.row3 .col1 .inside button {
     background-color: #FA9000;
     border: none;
     font-size: 25px;
@@ -132,26 +234,30 @@ nav .navMain .links{
     padding: 5px 25px;
     box-shadow: 0px 5px #FFD680;
 }
-.row3 .col2{
+
+.row3 .col2 {
     width: 50%;
 }
-.row3 .col2 img{
+
+.row3 .col2 img {
     width: 100%;
 }
 
 /* ROW 4 */
 
-.row4{
+.row4 {
     padding-top: 50px;
 }
-.row4 .col1{
+
+.row4 .col1 {
     width: 50%;
 }
-.row4 .col1 img{
+
+.row4 .col1 img {
     width: 100%;
 }
 
-.row4 .col2{
+.row4 .col2 {
     text-align: center;
     align-items: center;
     width: 50%;
@@ -160,15 +266,17 @@ nav .navMain .links{
     background-repeat: no-repeat;
 }
 
-.row4 .col2 h1{
+.row4 .col2 h1 {
     font-family: "Cera Stencil PRO";
 }
-.row4 .col2 p{
+
+.row4 .col2 p {
     font-size: 18px;
     line-height: 30px;
     padding: 15px 150px;
 }
-.row4 .col2 button{
+
+.row4 .col2 button {
     background-color: #0047BB;
     border: none;
     font-size: 25px;
@@ -180,30 +288,32 @@ nav .navMain .links{
 
 /* ROW 5 */
 
-.row5{
+.row5 {
     padding: 50px 0px;
 }
-.row5 .col1{
-    /* text-align: center; */
+
+.row5 .col1 {
     align-items: center;
     width: 50%;
     padding-top: 150px;
 }
 
-.row5 .col1 h1{
+.row5 .col1 h1 {
     padding-left: 120px;
     font-family: "Cera Stencil PRO";
 }
-.row5 .col1 p{
+
+.row5 .col1 p {
     font-size: 18px;
     line-height: 30px;
     padding: 15px 120px;
 }
-.row5 .col1 .btnRow5{
+
+.row5 .col1 .btnRow5 {
     padding-left: 120px;
 }
 
-.row5 .col1 button{
+.row5 .col1 button {
     background-color: #0047BB;
     border: none;
     color: #ffffff;
@@ -212,27 +322,31 @@ nav .navMain .links{
     padding: 5px 25px;
     box-shadow: 0px 5px #FEDB00;
 }
-.row5 .col2{
+
+.row5 .col2 {
     width: 50%;
 }
-.row5 .col2 video{
+
+.row5 .col2 video {
     width: 95%;
     padding: 15px;
 }
 
 /* ROW 6 */
 
-.row6{
+.row6 {
     padding-top: 50px;
 }
-.row6 .col1{
+
+.row6 .col1 {
     width: 50%;
 }
-.row6 .col1 img{
+
+.row6 .col1 img {
     width: 100%;
 }
 
-.row6 .col2{
+.row6 .col2 {
     text-align: center;
     align-items: center;
     width: 50%;
@@ -241,16 +355,18 @@ nav .navMain .links{
     background-repeat: no-repeat;
 }
 
-.row6 .col2 h1{
+.row6 .col2 h1 {
     font-family: "Cera Stencil PRO";
     padding: 0px 100px;
 }
-.row6 .col2 p{
+
+.row6 .col2 p {
     font-size: 18px;
     line-height: 30px;
     padding: 15px 150px;
 }
-.row6 .col2 button{
+
+.row6 .col2 button {
     background-color: #ffffff;
     border: none;
     font-size: 25px;
@@ -262,21 +378,20 @@ nav .navMain .links{
 
 /* ROW 7 */
 
-.row7 h1{
+.row7 h1 {
     padding: 40px 0px 10px 0;
     text-align: center;
     font-family: "Cera Stencil PRO";
     font-size: 35px;
 }
-.row7 .txtRow7{
-    /* margin-top: -30px; */
+
+.row7 .txtRow7 {
     padding-bottom: 45px;
     text-align: center;
     font-size: 18px;
-    /* font-weight: 600; */
 }
 
-.row7 .grid{
+.row7 .grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 90%;
@@ -284,20 +399,22 @@ nav .navMain .links{
     text-align: center;
 }
 
-.row7 .grid img{
+.row7 .grid img {
     width: 320px;
 }
-.row7 h3{
+
+.row7 h3 {
     font-family: "Cera Stencil PRO";
     padding-top: 15px;
 }
-.row7 .grid p{
+
+.row7 .grid p {
     padding: 10px 25px;
     font-size: 15px;
     font-style: italic;
 }
-.row7 .rating{
-    /* background-color: #FA9000; */
+
+.row7 .rating {
     width: 320px;
     margin: auto;
     padding-left: 40px;
@@ -305,16 +422,20 @@ nav .navMain .links{
     justify-content: center;
     font-size: 25px;
 }
-.row7 .rating .flex span{
+
+.row7 .rating .flex span {
     padding-left: 10px;
 }
+
 .row7 .rating .star .checked {
     color: #B497E3;
 }
-.row7 .prod{
+
+.row7 .prod {
     margin-top: -35px;
 }
-aside{
+
+aside {
     padding: 10px 0px;
     position: sticky;
     width: 117px;
@@ -322,11 +443,13 @@ aside{
     color: #ffffff;
     font-size: 17px;
 }
-.row7 .btnRow7{
+
+.row7 .btnRow7 {
     justify-content: center;
     padding-top: 50px;
 }
-.row7 button{
+
+.row7 button {
     background-color: #8CD0E3;
     border: none;
     font-size: 25px;
@@ -338,15 +461,17 @@ aside{
 
 /* ROW 8 */
 
-.row8{
+.row8 {
     text-align: center;
     padding: 130px 100px 50px 100px;
 }
-.row8 h1{
+
+.row8 h1 {
     font-family: "Cera Stencil PRO";
     font-size: 40px;
 }
-.row8 p{
+
+.row8 p {
     padding-top: 10px;
     font-size: 23px;
     font-weight: 300;
@@ -358,31 +483,36 @@ aside{
     background: linear-gradient(254.83deg, #B497E3 10.36%, #EFBFE6 89.03%);
     padding: 10px;
 }
-.row9 .txtRow9{
+
+.row9 .txtRow9 {
     align-items: center;
     justify-content: space-around;
     width: 80%;
     margin: auto;
 }
-.row9 p{
+
+.row9 p {
     font-weight: 600;
     font-size: 20px;
 }
-.row9 span{
+
+.row9 span {
     font-size: 35px;
     font-weight: 100;
 }
 
 /* FOOTER */
 
-footer{
+footer {
     background-color: #8CD0E3;
 }
-footer .left{
+
+footer .left {
     padding: 35px;
     width: 90%;
 }
-footer .left h1{
+
+footer .left h1 {
     font-size: 25px;
     font-family: "Cera Stencil PRO";
     padding-bottom: 25px;
@@ -391,56 +521,142 @@ footer .left h1{
 footer .top .col1,
 footer .top .col2,
 footer .top .col3,
-footer .top .col4
-{
+footer .top .col4 {
     padding: 20px;
 }
-footer .top li{
+
+footer .top li {
     padding: 10px 0px;
     font-size: 15px;
     font-weight: 500;
 }
-footer .top li input{
+
+footer .top li input {
     width: 350px;
     padding: 15px 0px;
 }
-footer .top li button{
+
+footer .top li button {
     padding: 15px 35px;
 }
-footer .top li p{
+
+footer .top li p {
     font-size: 12px;
 }
-footer .top li p a{
+
+footer .top li p a {
     text-decoration: underline;
     color: #0047BB;
 }
-footer .bottom p{
+
+footer .bottom p {
     font-size: 14px;
     padding-left: 20px;
-} 
+}
 
-footer .right{
+footer .right {
     align-content: center;
     width: 10%;
     background-color: #DFDDEB;
 }
-footer .right p{
+
+footer .right p {
     font-size: 20px;
     text-align: center;
     padding: 15px;
     font-weight: 500;
 }
-footer .right .socials div{
+
+footer .right .socials div {
     padding: 5px 60px;
 }
-footer .right .socials img{
+
+footer .right .socials img {
     width: 100%;
 }
 
-footer .right .corp{
+footer .right .corp {
     padding: 5px 20px;
     margin-left: 20px;
 }
-footer .right .corp img{
+
+footer .right .corp img {
     width: 90%;
+}
+
+
+
+/* BODY FIRMING */
+
+
+.bodyRow1 h1{
+    text-align: center;
+    font-family: "Cera Stencil PRO";
+    padding: 25px;
+}
+
+.bodyRow1 .drop {
+    width: 250px;
+    border: 1px solid gray;
+    margin-left: 75%;
+}
+
+.bodyRow1 .dropdown {
+    overflow: hidden;
+    width: 100%;
+}
+
+.bodyRow1 .dropdown .dropbtn
+{
+    padding: 16px 15px;
+    font-size: 16px;
+    color: #000;
+    font: inherit;
+    background-color: inherit;
+    margin: 0;
+}
+
+.bodyRow1 .filter .dropbtn
+{
+    padding: 16px 40px;
+    font-size: 16px;
+    border: none;
+    border-left: 1px solid gray;
+    color: #000;
+    font: inherit;
+    background-color: inherit;
+    margin: 0;
+}
+
+.bodyRow1 .dropdown-content {
+    /* display: none; */
+    position: absolute;
+    background-color: #ffffff;
+    width: 15%;
+    margin-left: 67%;
+    right: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.bodyRow1 .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bodyRow1 .column {
+    width: 100%;
+    padding: 20px;
+}
+.bodyRow1 .rowLeft{
+    width: 100%;
+}
+
+.bodyRow1 .column a {
+    color: black;
+    padding: 7px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    font-style: italic;
+    font-weight: 500;
 }
