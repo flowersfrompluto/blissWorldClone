@@ -592,7 +592,7 @@ footer .right .corp img {
 .bodyRow1 h1{
     text-align: center;
     font-family: "Cera Stencil PRO";
-    padding: 25px;
+    padding: 35px;
 }
 
 .bodyRow1 .drop {
@@ -659,4 +659,80 @@ footer .right .corp img {
     text-align: right;
     font-style: italic;
     font-weight: 500;
+}
+
+
+/* BODY ROW 2 */
+
+.bodyRow2 {
+    padding: 70px 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.bodyRow2 img {
+    width: 320px;
+}
+
+.bodyRow2 h3 {
+    font-family: "Cera Stencil PRO";
+    padding-top: 15px;
+}
+
+.bodyRow2 p {
+    padding: 5px 25px;
+    font-size: 15px;
+}
+
+.italic{
+    padding: 0;
+    font-style: italic;
+}
+
+.bodyRow2 .rating {
+    width: 320px;
+    margin: auto;
+    padding-left: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.bodyRow2 .rating .flex span {
+    padding-left: 10px;
+}
+
+.bodyRow2 .rating .star .checked {
+    color: #B497E3;
+}
+
+.bodyRow2 .btnbodyRow2 {
+    justify-content: center;
+    padding-top: 25px;
+    position: relative;
+}
+.bodyRow2 button a{
+    font-family: "Cera Stencil PRO";
+}
+.bodyRow2 button {
+    opacity: 0;
+    background-color: #8CD0E3;
+    border: none;
+    font-size: 25px;
+    font-family: "Cera Stencil PRO";
+    padding: 10px 0px;
+    width: 80%;
+    color: #000;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.bodyRow2 .bodyCol1:hover button,
+.bodyRow2 .bodyCol2:hover button{
+    opacity: 1;
+    /* visibility: visible; */
 }
