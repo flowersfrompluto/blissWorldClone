@@ -144,7 +144,7 @@ nav .navMain .links {
 }
 
 .navMain li {
-    padding: 25px 20px;
+    padding: 25px 20px 0px 20px;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
@@ -533,11 +533,15 @@ footer .top li {
 
 footer .top li input {
     width: 350px;
-    padding: 15px 0px;
+    height: 50px;
+    outline-style: none;
+    padding: 0px 15px;
 }
 
 footer .top li button {
     padding: 15px 35px;
+    background-color: #ffffff;
+    border: 1px solid;
 }
 
 footer .top li p {
@@ -735,4 +739,48 @@ footer .right .corp img {
 .bodyRow2 .bodyCol2:hover button{
     opacity: 1;
     /* visibility: visible; */
+}
+
+
+.loginRow1{
+    padding: 65px 0px 135px 0px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.loginRow1 h1{
+    padding: 10px;
+    font-family: "Cera Stencil PRO";
+}
+.loginRow1 p{
+    padding-top: 20px;
+    font-size: 14px;
+}
+.loginRow1 div{
+    padding-top: 15px;
+}
+.loginRow1 input{
+    border: 1px solid gray;
+    outline-style: none;
+    height: 50px;
+    padding-left: 15px;
+    width: 400px;
+}
+.loginRow1 h4{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-weight: 400;
+}
+
+.loginRow1 button {
+    background-color: #8CD0E3;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Cera Stencil PRO";
+    padding: 10px 0px;
+    width: 400px;
+    color: #000;
+    text-align: center;
+    transition: 0.5s;
 }
