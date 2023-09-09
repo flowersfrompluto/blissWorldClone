@@ -15,6 +15,11 @@ a {
     color: black;
 }
 
+.rating .star .checked {
+    color: #B497E3;
+}
+
+
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -783,4 +788,57 @@ footer .right .corp img {
     color: #000;
     text-align: center;
     transition: 0.5s;
+}
+
+/* PRODUCT PAGE */
+
+.productRow1{
+    padding: 50px;
+    background-color: #B497E3;
+    justify-content: space-between;
+}
+.productRow1 .productLeft{
+    width: 63%;
+    background-color: #FA9000;
+    justify-content: space-around;
+}
+.productRow1 .productLeft .miniImg{
+    width: 40%;
+}
+.productRow1 .productLeft .miniImg img{
+    width: 30%;
+}
+.productRow1 .productLeft .miniImg{
+    width: 30%;
+}
+.productRow1 .productLeft .mainImg{
+    padding-top: 30px;
+    width: 70%
+}
+.productRow1 .productLeft .mainImg img{
+    width: 100%;
+}
+.productRow1 .productRight{
+    width: 35%;
+    /* padding: 25px; */
+    background-color: #FFD680;
+}
+.productBtn{
+    border: 2px solid #000;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+.addBtn{
+    justify-content: space-between;
+}
+.productBtn button{
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+}
+.productBtn p{
+    font-size: 25px;
+    font-weight: 600;
 }
