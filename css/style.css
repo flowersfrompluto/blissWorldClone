@@ -794,12 +794,12 @@ footer .right .corp img {
 
 .productRow1{
     padding: 50px;
-    background-color: #B497E3;
+    /* background-color: #B497E3; */
     justify-content: space-between;
 }
 .productRow1 .productLeft{
     width: 63%;
-    background-color: #FA9000;
+    /* background-color: #FA9000; */
     justify-content: space-around;
 }
 .productRow1 .productLeft .miniImg{
@@ -821,7 +821,7 @@ footer .right .corp img {
 .productRow1 .productRight{
     width: 35%;
     /* padding: 25px; */
-    background-color: #FFD680;
+    /* background-color: #FFD680; */
 }
 .productBtn{
     border: 2px solid #000;
@@ -832,7 +832,7 @@ footer .right .corp img {
 .addBtn{
     justify-content: space-between;
 }
-.productBtn button{
+.productBtn .addBtn button{
     background-color: transparent;
     font-size: 25px;
     font-weight: 600;
@@ -841,4 +841,112 @@ footer .right .corp img {
 .productBtn p{
     font-size: 25px;
     font-weight: 600;
+}
+.productRight h1{
+    padding-top: 15px;
+    font-weight: 500;
+}
+
+.productRight p{
+    color: #333;
+    font-size: 13px;
+    padding: 15px;
+}
+.productRight h3,
+.productRight h6{
+    padding: 12px 0px;
+}
+.productRight h6 a{
+    text-decoration: underline;
+}
+.productRight h3{
+    font-weight: 500;
+}
+.productRight h3 button{
+    text-align: left;
+    background-color: transparent;
+    font-weight: 500;
+    border: none;
+    width: 400px;
+    font-size: large;
+}
+.productRight h3 button span{
+    float: right;
+}
+
+.productRight h3{
+    border-top: 1px solid gray;
+}
+.key{
+    border-bottom: 1px solid gray;
+}
+.productRight .price{
+    border-top: none;
+}
+.productRight .desc{
+    font-style: italic;
+    padding-left: 0;
+}
+.productRight .bagBtn {
+    justify-content: center;
+    /* padding-top: 25px; */
+}
+.bagBtn button {
+    border: none;
+    background-color: #8CD0E3;
+    font-size: 25px;
+    padding: 10px 90px;
+    color: #000;
+    text-align: center;
+}
+.bagBtn button a{
+    font-family: "Cera Stencil PRO";
+}
+.space{
+    justify-content: space-between;
+}
+
+/* PRODUCT ROW 2 */
+
+.productRow2 h1{
+    padding: 40px 0px;
+    text-align: center;
+    font-family: "Cera Stencil PRO";
+    font-size: 35px;
+}
+.productRow2 .grid {
+    display: grid;
+    /* background-color: #0047BB; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    gap: 10px;
+    padding-left: 25px;
+    /* margin: auto; */
+    text-align: center;
+}
+
+.productRow2 .grid img {
+    width: 300px;
+}
+.productRow2 .grid h3{
+    text-align: center;
+    width: 70%;
+    font-weight: 500;
+    margin: auto;
+}
+.productRow2 .grid p {
+    padding: 10px 25px;
+    font-size: 15px;
+    font-style: italic;
+}
+.productRow2 .rating {
+    width: 317px;
+    margin: auto;
+    padding-left: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.productRow2 .rating .flex span {
+    padding-left: 10px;
 }
