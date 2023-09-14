@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p, li{
+    font-family: sans-serif;
+}
+
+.nav{
+    height: 80px;
+    background-color: rgb(98, 179, 237);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.nav-bar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+#search{
+    width: 500px;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    z-index: 50;
+    background-color: rgb(29, 29, 99);
+    margin-top: 80px;
+}
+.admin{
+    /* background-color: orangered; */
+    height: 50px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.Dashboard{
+    height: 50px;
+    padding-top: 30px;
+    padding-left: 20px;
+    background-color: rgb(243, 96, 96);
+    color: white;
+}
+.Dashboard p:hover{
+    cursor: pointer;
+    color: black;
+}
+.acct p{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-top: 5px;
+    color: rgb(253, 249, 249);
+}
+.user{
+    margin: 55px 0px 0px 0px;
+    padding-left: 20px;
+    background-color: rgb(29, 29, 99);
+    color: white;
+    border-bottom: 50px;
+    border-color: blanchedalmond;
+}
+.user:hover{
+    cursor: pointer;
+    color: orangered;
+}
+.signOut{
+    margin-top: 160px;
+    color: white;
+    padding-left: 20px;
+}
+.signOut:hover{
+    cursor: pointer;
+    color: orangered;
+}
+.right{
+    /* background-color: rgb(214, 213, 213); */
+    margin-top: 80px;
+    width: 100%;
+    margin-left: 20%; 
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.cards{
+    height: 150px;
+    width: 250px;
+    background-color: rgb(223, 222, 222);
+    border-radius: 10px;
+    box-shadow: 30px rgb(202, 38, 9);
+}
+.cards p{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.logo img{
+    padding-top: 10px;
+    height: 20px;
+}
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+tbody, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+#myTable{
+    padding-left: 100px;
+}
+.productTable{
+    padding-top: 70px;
+}
+td{
+    padding: 30px;
+}
