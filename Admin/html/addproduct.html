@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/addProduct.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navBar flex">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/Bliss_Logo_White_3x_6c3396d6-15e0-4c23-a933-633783887842_140x.png" alt=""></a>
+            </div>
+            <div>
+                <input type="search" id="search" placeholder="search" name="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="acct">
+                <p>My Account</p>
+            </div>
+        </div>
+    </nav>
+    <div class="body flex">
+
+        <div class="left">
+            <div class="dashboard">
+                <a href="#">Dashboard</a>
+            </div>
+            <div class="down">
+                <div class="user">
+                    <a href="../index.html">Products <span class="span">></span></a>
+                </div>
+                <div class="user">
+                    <a href="html/addproduct.html">Create Product <span class="span">></span></a>
+                </div>
+                <div class="user">
+                    <a href="../html/newUser.html">Sign Up <span class="span">></span></a>
+                </div>
+                <div class="user">
+                    <a href="../html/login.html">Login <span class="span">></span></a>
+                </div>
+                <div class="exit">
+                    <a href="#" class="signOut">Sign Out <span class="span">></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="adminRight">
+                <form action="">
+                    <div class="addProduct">
+                        <div class="form">
+                            <form action="">
+                                <h3>Welcome to Product Management</h3>
+                                <div>
+                                    <label for="name">Product Name</label><br>
+                                    <input name="name" type="text" id="name" maxlength="50" required>
+                                </div>
+                                <div>
+                                    <label for="category">Product Category</label><br>
+                                    <input name="category" type="text" id="category" maxlength="50" required>
+                                </div>
+                                <div>
+                                    <label for="price">Product Price</label><br>
+                                    <input name="price" max="10000" type="number" id="price" required>
+                                </div>
+                                <div>
+                                    <label for="quantity">Product Quantity</label><br>
+                                    <input name="quantity" type="number" max="999" id="quantity" required>
+                                </div>
+                                <div>
+                                    <label for="file">Product Name</label><br>
+                                    <input type="file" name="file" id="fileUpload" accept="image/png, image/gif, image/jpeg">
+                                </div>
+                                <div>
+                                    <label for="description">Description</label>
+                                    <textarea name="description" cols="56" rows="3" id="description"
+                                        maxlength="150"></textarea>
+                                </div>
+                            </form>
+                            <div class="btn">
+                                <button type="submit" id="addBtn">Add Product</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.6.1.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

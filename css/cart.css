@@ -168,40 +168,131 @@ nav .navMain .links {
 }
 
 /* CART PAGE */
-.cartRow1 h1{
+.cartRow1 h1 {
     text-align: center;
     font-family: "Cera Stencil PRO";
-    padding: 20px 0px;
+    padding-top: 50px;
 }
+
 .cartBtn {
     border: 1px solid #333;
     width: 100px;
-    text-align: center;
     padding: 10px;
+    align-items: center;
 }
+
+td p {
+    text-align: center;
+}
+
 .addBtn {
     justify-content: space-between;
 }
+
 .cartBtn .addBtn button {
     background-color: transparent;
     font-size: 25px;
     font-weight: 600;
     border: none;
 }
-.cartTable{
+
+.btnRemove {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    width: 100px;
+    padding-top: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+span button{
+    cursor: pointer;
+}
+.cartTable {
     width: 70%;
     margin: auto;
-    padding: 60px;
-    background-color: #DFDDEB;
+    padding: 60px 60px 20px 60px;
+    /* background-color: #DFDDEB; */
 }
-table{
-    background-color: #EFBFE6;
+
+.cartItem {
+    align-items: center;
+    padding-top: 15px;
+}
+
+table {
     width: 100%;
     text-align: left;
     border-bottom: 1px solid #333;
 }
-th{
+
+th {
     border-bottom: 1px solid #333;
+}
+
+/* CART ROW 2 */
+
+.cartRow2 {
+    width: 60%;
+    padding-left: 40px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.payments img {
+    width: 300px;
+}
+
+.coupon {
+    justify-content: space-between;
+}
+
+.coupon div {
+    padding-right: 10px;
+}
+
+.coupon input {
+    padding: 0px 10px;
+    width: 300px;
+    height: 40px;
+    font-size: 17px;
+    outline-style: none;
+}
+
+.cartRow2 p {
+    padding-top: 10px;
+}
+
+.cartRow2 .right {
+    padding-right: 10px;
+    text-align: right;
+}
+
+span {
+    float: right;
+    padding-right: 15px;
+}
+
+.coupon button {
+    height: 40px;
+    width: 90px;
+    font-size: 17px;
+    border: none;
+    background-color: #000;
+    color: #ffffff;
+}
+
+.btn {
+    padding: 20px 0px 60px 0px;
+}
+
+.chekoutBtn {
+    background-color: #8CD0E3;
+    border: none;
+    font-family: "Cera Stencil PRO";
+    width: 170px;
+    height: 40px;
+    font-size: 20px;
 }
 
 /* FOOTER */

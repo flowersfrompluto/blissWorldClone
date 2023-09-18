@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.addProduct {
+    padding: 30px 0px;
+}
+
+/* 
+.color{
+color: #FA9000;
+color: #0047BB;
+color: #8CD0E3;
+color: #B497E3;
+color: #DFDDEB;
+color: #EFBFE6;
+color: #FFD680;
+color: #FEDB00;
+} */
+
+
+.form {
+    justify-content: center;
+    width: 500px;
+    background-color: #8CD0E3;
+    margin-left: 20%;
+    padding: 25px 50px;
+}
+
+.form h3 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.form div {
+    padding-bottom: 5px;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    outline: none;
+    padding: 0px 15px;
+}
+
+textarea {
+    outline: none;
+    padding: 10px;
+}
+
+.addProduct .btn {
+    padding-top: 15px;
+}
+
+.addProduct button {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    background-color: #f0ffff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .addProduct {
+        padding: 15px 0px;
+    }
+
+    .form {
+        justify-content: center;
+        width: 500px;
+        margin-left: 350px;
+        padding: 50px;
+    }
+
+    .form h3 {
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+
+    .form div {
+        padding-bottom: 5px;
+    }
+
+    input {
+        width: 400px;
+        height: 30px;
+        outline: none;
+        padding: 0px 15px;
+    }
+
+    textarea {
+        outline: none;
+        padding: 10px;
+    }
+
+    .addProduct .btn {
+        padding-top: 15px;
+    }
+
+    .addProduct button {
+        padding: 15px;
+        border-radius: 5px;
+        border: none;
+        font-size: 18px;
+    }
+
+    .adminContent h1 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .addProduct {
+        padding: 15px 0px;
+    }
+
+    .form {
+        justify-content: center;
+        width: 450px;
+        margin-left: 200px;
+        padding: 25px;
+    }
+
+    .form h3 {
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+
+    .form div {
+        padding-bottom: 5px;
+    }
+
+    input {
+        width: 400px;
+        height: 30px;
+        outline: none;
+        padding: 0px 15px;
+    }
+
+    textarea {
+        outline: none;
+        padding: 10px;
+    }
+
+    .addProduct .btn {
+        padding-top: 15px;
+    }
+
+    .addProduct button {
+        padding: 15px;
+        border-radius: 5px;
+        border: none;
+        font-size: 18px;
+    }
+
+    .adminContent h1 {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+
+    .addProduct {
+        padding: 15px 0px;
+    }
+
+    .form {
+        justify-content: center;
+        width: 320px;
+        margin-left: 150px;
+        padding: 25px;
+    }
+
+    .form h3 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .form div {
+        padding-bottom: 3px;
+    }
+
+    input {
+        width: 285px;
+        height: 30px;
+        outline: none;
+        padding: 0px 15px;
+    }
+
+    textarea {
+        outline: none;
+        padding: 10px;
+    }
+
+    .addProduct .btn {
+        padding-top: 15px;
+    }
+
+    .addProduct button {
+        padding: 15px;
+        border-radius: 5px;
+        border: none;
+        font-size: 18px;
+    }
+
+    .adminContent h1 {
+        font-size: 20px;
+    }
+}

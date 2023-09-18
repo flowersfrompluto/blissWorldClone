@@ -1,60 +1,37 @@
-let fNameField = $("#fName"),
-    lNameField = $("#lName"),
-    emailField = $("#email"),
-    passwordField = $("#password"),
+let fNameField = $("#fName")
+    lNameField = $("#lName")
+    emailField = $("#email")
+    passwordField = $("#password")
     createAcct = $("#createAcct")
 
 let index
 let newUser = []
-loadUsers()
+createUsers()
+
+createAcct.on("click", function (e) {
+    e.preventDefault()
+    // validateData()
+})
 
 createAcct.on("click", function () {
 
-    //Check if the index dose not have any value, if it has a value, update the data using the index value else create a new data
-    if (index != null) {
-        newUser()
-    } else {
-        createUsers()
-    }
-
+    $("#fNameField").val(newUser["firstName"])
+    $("#lNameField").val(newUser["lastName"])
+    $("#emailField").val(newUser["email"])
+    $("#passwordField").val(newUser["password"])
+    
+    createUsers()
 })
 
-loginRow1.on("click", function () {
-    //Assign value to the global index
-    index = $(this).attr("index")
-    //Assign the index of the object to the form field
-    fNameField.val(newUser[index]["fName"])
-    lNameField.val(newUser[index]["lName"])
-    emailField.val(newUser[index]["email"])
-    passwordField.val(newUser[index]["password"])
-})
-
-loginRow1.on("click", "#createAcct", function () {
-
-    if (confirm("Kindly Confirm your password")) {
-
-        //Get the attribute saved using the (this) keyword
-        let i = $(this).attr("index")
-
-        //Save to local storage
-        localStorage.setItem("users", JSON.stringify(newUser))
-        //Relaod the array
-        loadUsers()
-    }
-
-})
+console.log(fNameField.val());
+console.log(newUser);
 
 
-function createUsers() {
-    //Create an object of the record
-    let empObj = { "fName": fNameField.val(), "lName": lNameField.val(), "email": emailField.val(), "password": passwordField.val(), }
+function createUsers(){
+    let userObj = { "firstName": fNameField.val(), "lastName": lNameField.val(), "email": emailField.val(), "password": passwordField.val() }
 
-    //Add record to array
-    newUser.push(empObj)
+    newUser.push(userObj)
+    
+    localStorage.setItem("new", JSON.stringify(newUser))
 
-    //Save to local storage
-    localStorage.setItem("users", JSON.stringify(newUser))
-
-    //load array to html view
-    // loadUsers()
 }

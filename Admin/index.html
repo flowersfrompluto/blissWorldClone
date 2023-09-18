@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-bar">
+    <nav>
+        <div class="navBar flex">
             <div class="logo">
-                <img src="https://bouguessa.com/cdn/shop/files/logo-bouguessa_140x.png?v=1613712243" alt="">
+                <a href="index.html"><img src="../img/Bliss_Logo_White_3x_6c3396d6-15e0-4c23-a933-633783887842_140x.png" alt=""></a>
             </div>
             <div>
                 <input type="search" id="search" placeholder="search" name="search" >
@@ -22,31 +22,44 @@
             </div>
         </div>
     </nav>
-    <div class="body">
+    <div class="body flex">
         <div class="left">
-            <div class="Dashboard">
-                <p>Dashboard</p>
+            <div class="dashboard">
+                <a href="#">Dashboard</a>
             </div>
             <div class="down">
-                <div class="user"><p>Products</p></div>
-                <div class="user"><P>Create Product</P></div>
-                <div class="user"><p>User</p></div>
-                <div class="user"><p>Create User</p></div>
-            </div>
-            <div>
-                <p class="signOut">Sign Out</p>
+                <div class="user">
+                    <a href="index.html">Products <span class="span">></span></a>
+                </div>
+                <div class="user">
+                    <a href="html/addproduct.html">Create Product <span class="span">></span></a>
+                </div>
+                <div class="user">
+                    <a href="html/newUser.html">Sign Up<span class="span">></span></a>
+                </div>
+                <div class="user">
+                    <a href="html/login.html">Login <span class="span">></span></a>
+                </div>
+                <div class="exit">
+                    <a href="#" class="signOut">Sign Out <span class="span">></span></a>
+                </div>
             </div>
         </div>
         <div class="right">
             <div class="card">
                 <div class="cards">
+                    
                     <p>Total Products</p>
+                    
                 </div>
                 <div class="cards">
                     <p>Total Users</p>
                 </div>
                 <div class="cards">
                     <p>Total Products in cart</p>
+                </div>
+                <div class="cards">
+                    <p>Total Amount</p>
                 </div>                
             </div>
             <div class="productTable">
@@ -59,89 +72,11 @@
                             <th>PRICE</th>
                             <th>QUANTITY</th>
                             <th>DESCRIPTION</th>
+                            <th>ACTIONS</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Afreen Shirt</td>
-                            <td>Women</td>
-                            <td>$216</td>
-                            <td>15</td>
-                            <td>Cool female outfit</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Petra Scarf</td>
-                            <td>Men</td>
-                            <td>$350</td>
-                            <td>21</td>
-                            <td>Cool vintage hood</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Rabea Pants</td>
-                            <td>Women</td>
-                            <td>$400</td>
-                            <td>13</td>
-                            <td>Women sweat pants</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Petra Sarong</td>
-                            <td>Women</td>
-                            <td>$499</td>
-                            <td>25</td>
-                            <td>Summer outfit</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Afreen Shorts</td>
-                            <td>Women</td>
-                            <td>$126</td>
-                            <td>7</td>
-                            <td>Female shorts</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Lea Sleeveless Dress</td>
-                            <td>Women</td>
-                            <td>#910</td>
-                            <td>19</td>
-                            <td>Sleeveless dress</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Mashael Wrapped Skirt</td>
-                            <td>Women</td>
-                            <td>$870</td>
-                            <td>43</td>
-                            <td>Classy wrapped Skirt</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>RAF Baggy Pants</td>
-                            <td>Men</td>
-                            <td>$433</td>
-                            <td>13</td>
-                            <td>Baggy pants</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>Mani Straight Pants</td>
-                            <td>Men</td>
-                            <td>$597</td>
-                            <td>18</td>
-                            <td>Straight pants</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>Osa Long Coat</td>
-                            <td>Men</td>
-                            <td>$1,301</td>
-                            <td>25</td>
-                            <td>Long coat</td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -151,6 +86,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

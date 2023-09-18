@@ -1,0 +1,61 @@
+.loginRow1 {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.loginRow1 h1 {
+    padding-top: 50px;
+}
+
+.loginRow1 p {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.loginRow1 div {
+    padding-top: 15px;
+}
+
+.loginRow1 input {
+    border: 1px solid gray;
+    outline-style: none;
+    height: 50px;
+    padding-left: 15px;
+    width: 400px;
+}
+
+.loginRow1 h4 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-weight: 400;
+}
+
+.loginRow1 .signUp {
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-weight: 400;
+}
+
+.loginRow1 .signUp a{
+    text-decoration: underline;
+    color: #0047BB;
+    font-size: 13px;
+}
+
+.loginRow1 button {
+    background-color: #8CD0E3;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px;
+    width: 400px;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+label{
+    color: red;
+    font-size: 12px;
+}

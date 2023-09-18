@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <title>User</title>
+</head>
+<body>
+    <nav>
+        <div class="navBar flex">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/Bliss_Logo_White_3x_6c3396d6-15e0-4c23-a933-633783887842_140x.png" alt=""></a>
+            </div>
+            <div>
+                <input type="search" id="search" placeholder="search" name="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="acct">
+                <p>My Account</p>
+            </div>
+        </div>
+    </nav>
+    <div class="body flex">
+
+        <div class="left">
+            <div class="dashboard">
+                <a href="#">Dashboard</a>
+            </div>
+            <div class="down">
+                <div class="user">
+                    <a href="../index.html">Products <span class="span">></span></a>
+                </div>
+                <div class="user">
+                    <a href="./addproduct.html">Create Product <span class="span">></span></a>
+                </div>
+                <div class="user">
+                    <a href="../html/newUser.html">Sign Up <span class="span">></span></a>
+                </div>
+                <div class="user">
+                    <a href="../html/login.html">Login <span class="span">></span></a>
+                </div>
+                <div class="exit">
+                    <a href="#" class="signOut">Sign Out <span class="span">></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="loginRow1">
+                <h1>REGISTER</h1>
+                <P>Please fill in the information below:</P>
+                <form action="">
+                    <div>
+                        <input type="text" placeholder="First Name" id="fName" name="fName" required>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Last Name" id="lName" name="lName" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Password" id="password" name="password" required>
+                    </div>
+                    <div class="loginBtn">
+                        <button type="submit" id="createAcct">
+                            CREATE MY ACCOUNT
+                        </button>
+                    </div>
+                </form>
+                <div>
+                    <h4 class="signUp">
+                        By creating an account, you agree to our <a href="#">terms</a> and <a href="#">privacy policy.</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.6.1.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/newUser.js"></script>
+</body>
+</html>

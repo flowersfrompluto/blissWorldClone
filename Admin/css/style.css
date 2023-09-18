@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a, li{
+    font-family: 'Archer Pro';
+    font-size: 20px;
+    background-color: inherit;
+}
+
+.flex{
+    display: flex;
+}
+
+nav{
+    background: linear-gradient(254.83deg, #B497E3 10.36%, #EFBFE6 89.03%);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.navBar{
+    padding: 20px;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+
+#search{
+    width: 500px;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 15px;
+    outline-style: none;
+    height: 30px;
+}
+
+.body{
+    justify-content: space-between;
+}
+
+.left{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    z-index: 80;
+    background-color: #8CD0E3;
+    margin-top: 80px;
+}
+
+.dashboard{
+    height: 50px;
+    padding-top: 30px;
+    padding-left: 20px;
+    background-color: #FA9000;
+    color: white;
+}
+
+.dashboard a{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dashboard:hover{
+    background-color: #FFD680;
+}
+
+.dashboard:hover a{
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+}
+
+.acct p{
+    font-size: 20px;
+    color: #fff;
+}
+
+.user{
+    padding: 15px 20px;
+    color: #fff;
+}
+
+.exit{
+    padding: 0px 20px;
+    margin-top: 200px;
+}
+
+.user:hover a{
+    cursor: pointer;
+    color: #FA9000;
+}
+
+.user:hover a .span,
+.exit:hover a .span{
+    cursor: pointer;
+    transition: 800ms;
+    transform: translateX(20px);
+    color: #FA9000;
+}
+
+.span{
+    float: right;
+    padding-right: 20px;
+    font-weight: 600;
+    transition: 1ms;
+}
+
+.exit:hover a{
+    cursor: pointer;
+    color: #FA9000;
+}
+
+.right{
+    margin-top: 80px;
+    width: 100%;
+    margin-left: 20%; 
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 0px 10px;
+    padding-top: 50px;
+}
+
+.cards{
+    background-color: #EFBFE6;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px #B497E3;
+    align-items: center;
+}
+
+.cards p{
+    padding: 30px;
+    font-family: "archer pro";
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.logo img{
+    padding-top: 10px;
+    width: 100px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+tbody, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #dcdcdc;
+}
+
+#myTable{
+    padding-left: 100px;
+}
+
+.productTable{
+    padding-top: 70px;
+}
+
+td{
+    padding: 5px;
+}
+td .edit a {
+    color: green;
+}
+td .edit a,
+td .delete a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+td .delete a{
+    color: red;
+}

@@ -62,9 +62,9 @@ a {
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
 .column {
     float: left;
@@ -156,10 +156,10 @@ nav .navMain .links {
 }
 
 .navMain li {
-    padding: 25px 20px 0px 20px;
+    padding: 25px 10px 0px 10px;
     text-align: center;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .navIcons {
