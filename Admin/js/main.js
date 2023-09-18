@@ -18,6 +18,9 @@ let index
 let listOfProducts = []
 loadProductsView()
 
+$("button").click(function(e){
+    e.preventDefault()
+})
 
 addBtn.on("click", function () {
 
@@ -49,10 +52,10 @@ myTable.on("click", ".deleteBtn", function () {
         $.ajax({
             type: "delete",
             url: "http://159.65.21.42:9000/products/" + product_id,
-            success: function (res) {
-                console.log(res);
-                if (res["success"]) {
-                    alert(`${res["success"]}`)
+            success: function (data) {
+                console.log(data);
+                if (data["success"]) {
+                    alert(`${data["success"]}`)
                     loadProductsView()
                 }
             },
@@ -72,13 +75,13 @@ function createProducts() {
         type: "post",
         url: "http://159.65.21.42:9000/create/product",
         data: productObj,
-        success: function (res) {
-            console.log(res);
+        success: function (data) {
+            console.log(data);
 
-            if (res["error"]) {
-                alert(res["error"])
+            if (data["error"]) {
+                alert(data["error"])
             } else {
-                alert(`${res["name"]} registration successful`)
+                alert(`${data["name"]} registration successful`)
             }
         },
         error: function (err) {
@@ -100,16 +103,15 @@ function updateProducts() {
         type: "put",
         url: "http://159.65.21.42:9000/update/product/" + product_id,
         data: productObj,
-        success: function (res) {
-            console.log(res);
+        success: function (data) {
+            console.log(data);
 
-            if (res["error"]) {
-                alert(res["error"])
+            if (data["error"]) {
+                alert(data["error"])
             } else {
-                alert(`${res["name"]} update successful`)
+                alert(`${data["name"]} update successful`)
                 loadProductsView()
 
-                // addBtn.html("Save Data")
                 index = null
             }
         },
@@ -125,14 +127,17 @@ function loadProductsView() {
     $.ajax({
         type: "get",
         url: "http://159.65.21.42:9000/products",
-        success: function (res) {
-            console.log(res);
-            listOfProducts = res
+        success: function (data) {
+            console.log(data);
+            listOfProducts = data
+            // listOfProducts = listOfProducts.reverse()
             let row = ""
 
-            //loop through the array
             for (let i = 0; i < listOfProducts.length; i++) {
-
+                if (listOfProducts[i].category == "SparkleJumpRopeQueen") {
+                    
+                }
+                
                 row += `<tr>
                 <td>${i + 1}</td>
                 <td>${listOfProducts[i]["name"]}</td>
