@@ -13,6 +13,7 @@ addBtn = $("#addBtn")
 editBtn = $(".edit")
 deleteBtn = $(".delete")
 myTable = $("#myTable")
+// totalProducts = $(".totalProducts")
 
 let index
 let listOfProducts = []
@@ -139,13 +140,13 @@ function loadProductsView() {
         success: function (data) {
             // console.log(data);
             listOfProducts = data
-            // listOfProducts = listOfProducts.reverse()
             let row = ""
 
             for (let i = 0; i < listOfProducts.length; i++) {
-                // i=10;
+
                 if (listOfProducts[i].category == "SparkleJumpRopeQueen") {
                     row +=
+                        
                     `<tr>
                     <td>${i + 1}</td>
                     <td>${listOfProducts[i]["name"]}</td>
