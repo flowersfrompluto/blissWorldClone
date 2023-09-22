@@ -159,15 +159,16 @@ function loadProductsView() {
 
             for (let i = 0; i < listOfProducts.length; i++) {
                 if (listOfProducts[i].category == "SparkleJumpRopeQueen") {
-                    row += `<tr>
-                <td>${i + 1}</td>
-                <td>${listOfProducts[i]["name"]}</td>
-                <td>${listOfProducts[i]["category"]}</td>
-                <td>${listOfProducts[i]["price"]}</td>
-                <td>${listOfProducts[i]["quantity"]}</td>
-                <td>${listOfProducts[i]["description"]}</td>
-                <td><a href="#" class="editBtn"  index="${i}">Edit</a>  |  <a href="#" class="deleteBtn" index="${i}">Delete</a></td>
-                </tr>`
+                    row +=
+                    `<tr>
+                    <td>${i + 1}</td>
+                    <td>${listOfProducts[i]["name"]}</td>
+                    <td>${listOfProducts[i]["category"]}</td>
+                    <td>${listOfProducts[i]["price"]}</td>
+                    <td>${listOfProducts[i]["quantity"]}</td>
+                    <td>${listOfProducts[i]["description"]}</td>
+                    <td><a href="#" class="editBtn"  index="${i}">Edit</a>  |  <a href="#" class="deleteBtn" index="${i}">Delete</a></td>
+                    </tr>`
                 }
             }
             myTable.append(row)
