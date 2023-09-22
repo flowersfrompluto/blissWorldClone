@@ -24,7 +24,9 @@ function loadProductsView() {
             listOfProducts = data
             listOfProducts = listOfProducts.reverse()
             let row = ""
+            let i = $(this).attr("index")
 
+            row = listOfProducts[i]
             for (let i = 0; i < listOfProducts.length; i++) {
                 if (listOfProducts[i].category == "SparkleJumpRopeQueen") {
         row += 
@@ -55,8 +57,9 @@ function loadProductsView() {
         </div>`
                 }
             }
-            myTable.html(row)
-            // bodyCol1.html(row)
+            // myTable.append(row)
+            bodyCol1.html(row)
+            // bodyRow2.html(row)
         },
         error: function (err) {
             // console.log(err);

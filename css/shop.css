@@ -244,14 +244,18 @@ nav .navMain .links {
 
 /* BODY ROW 2 */
 
-.bodyRow2 {
+
+
+.bodyCol1 {
     padding: 70px 0px;
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 95%;
-    margin: auto;
+    width: 100%;
     gap: 20px;
     text-align: center;
+}
+.bodyCol1 div{
+    background-color: #0047BB;
 }
 
 .bodyRow2 img {
@@ -314,15 +318,7 @@ nav .navMain .links {
 }
 
 
-.bodyRow2 .bodyCol1:hover button,
-.bodyRow2 .bodyCol2:hover button,
-.bodyRow2 .bodyCol3:hover button,
-.bodyRow2 .bodyCol4:hover button,
-.bodyRow2 .bodyCol5:hover button,
-.bodyRow2 .bodyCol6:hover button,
-.bodyRow2 .bodyCol7:hover button,
-.bodyRow2 .bodyCol8:hover button,
-.bodyRow2 .bodyCol9:hover button {
+.bodyRow2 .bodyCol1 div:hover button{
     opacity: 1;
     /* visibility: visible; */
 }
