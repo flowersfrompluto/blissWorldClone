@@ -1,9 +1,13 @@
 $(document).ready(function () {
+
+    let addToCart = $(".addToCart")
+    
+
     const cart = [];
     let total = 0;
 
     // Add to Cart button click handler
-    $('.addToCart').click(function () {
+    addToCart.click(function () {
         const product = $(this).closest('div');
         const id = product.data('id');
         const name = product.data('name');

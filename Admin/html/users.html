@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Users</title>
+</head>
+<body>
+    <nav>
+        <div class="navBar flex">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/Bliss_Logo_White_3x_6c3396d6-15e0-4c23-a933-633783887842_140x.png" alt=""></a>
+            </div>
+            <div>
+                <input type="search" id="search" placeholder="search" name="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="acct">
+                <p>My Account</p>
+            </div>
+        </div>
+    </nav>
+    <div class="body flex">
+
+        <div class="left">
+            <div class="dashboard">
+                <a href="../index.html">Dashboard</a>
+            </div>
+            <div class="down">
+                <div class="user">
+                    <a href="../html/products.html">Products <span class="span">></span></a>
+                </div>
+                <div class="user">
+                    <a href="../html/addproduct.html">Create Product <span class="span">></span></a>
+                </div>
+                <div class="user">
+                    <a href="../html/newUser.html">Create Users <span class="span">></span></a>
+                </div>
+                <div class="user">
+                    <a href="../html/users.html">Users <span class="span">></span></a>
+                </div>
+                <div class="exit">
+                    <a href="#" class="signOut">Sign Out <span class="span">></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="userTable">
+                <table id="myUserTable">
+                    <thead>
+                        <tr>
+                            <th>S/N</th>
+                            <th>NAME</th>
+                            <th>PHONE NUMBER</th>
+                            <th>EMAIL</th>
+                            <th>PASSWORD</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.6.1.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/newUser.js"></script>
+</body>
+</html>

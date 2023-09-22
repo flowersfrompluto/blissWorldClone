@@ -247,9 +247,10 @@ nav .navMain .links {
 .bodyRow2 {
     padding: 70px 0px;
     display: grid;
-    grid-template-columns: auto auto;
-    width: 60%;
+    grid-template-columns: auto auto auto;
+    width: 95%;
     margin: auto;
+    gap: 20px;
     text-align: center;
 }
 
@@ -314,9 +315,40 @@ nav .navMain .links {
 
 
 .bodyRow2 .bodyCol1:hover button,
-.bodyRow2 .bodyCol2:hover button {
+.bodyRow2 .bodyCol2:hover button,
+.bodyRow2 .bodyCol3:hover button,
+.bodyRow2 .bodyCol4:hover button,
+.bodyRow2 .bodyCol5:hover button,
+.bodyRow2 .bodyCol6:hover button,
+.bodyRow2 .bodyCol7:hover button,
+.bodyRow2 .bodyCol8:hover button,
+.bodyRow2 .bodyCol9:hover button {
     opacity: 1;
     /* visibility: visible; */
+}
+
+/* ROW 9 */
+
+.row9 {
+    background: linear-gradient(254.83deg, #B497E3 10.36%, #EFBFE6 89.03%);
+    padding: 10px;
+}
+
+.row9 .txtRow9 {
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.row9 p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.row9 span {
+    font-size: 35px;
+    font-weight: 100;
 }
 
 /* FOOTER */

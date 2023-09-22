@@ -62,9 +62,9 @@ a {
     z-index: 1;
 }
 
-/* .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-} */
+}
 
 .column {
     float: left;

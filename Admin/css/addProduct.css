@@ -52,6 +52,13 @@ input {
     padding: 0px 15px;
 }
 
+select {
+    width: 435px;
+    height: 40px;
+    outline: none;
+    padding: 0px 15px;
+}
+
 textarea {
     outline: none;
     padding: 10px;

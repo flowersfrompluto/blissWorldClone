@@ -1,11 +1,13 @@
 .loginRow1 {
+    /* padding: 65px 0px 135px 0px; */
     width: 50%;
     margin: auto;
     text-align: center;
 }
 
 .loginRow1 h1 {
-    padding-top: 50px;
+    padding: 0px 10px;
+    font-family: "Cera Stencil PRO";
 }
 
 .loginRow1 p {
@@ -25,23 +27,16 @@
     width: 400px;
 }
 
-.loginRow1 h4 {
-    padding-top: 20px;
-    padding-bottom: 50px;
-    font-weight: 400;
-}
-
 .loginRow1 .signUp {
     font-size: 13px;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    /* padding-top: 5px; */
+    /* padding-bottom: 50px; */
     font-weight: 400;
 }
 
 .loginRow1 .signUp a{
     text-decoration: underline;
     color: #0047BB;
-    font-size: 13px;
 }
 
 .loginRow1 button {
@@ -49,13 +44,19 @@
     border: none;
     font-size: 20px;
     font-weight: bold;
+    font-family: "Cera Stencil PRO";
     padding: 10px 0px;
     width: 400px;
     color: #000;
     text-align: center;
-    cursor: pointer;
 }
-label{
+
+.error{
+    text-align: center;
     color: red;
-    font-size: 12px;
+    font-size: 10px;
+}
+
+.linked{
+    font-size: 15px;
 }

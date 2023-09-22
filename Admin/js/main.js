@@ -18,7 +18,7 @@ let index
 let listOfProducts = []
 loadProductsView()
 
-$("button").click(function(e){
+$("button").click(function (e) {
     e.preventDefault()
 })
 
@@ -34,7 +34,7 @@ addBtn.on("click", function () {
 
 myTable.on("click", ".editBtn", function () {
     index = $(this).attr("index")
-    
+
     nameField.val(listOfProducts[index]["name"])
     categoryField.val(listOfProducts[index]["category"])
     priceField.val(listOfProducts[index]["price"])
@@ -51,7 +51,7 @@ myTable.on("click", ".deleteBtn", function () {
 
         $.ajax({
             type: "delete",
-            url: "http://159.65.21.42:9000/products/" + product_id,
+            url: "http://159.65.21.42:9000/product/" + product_id,
             success: function (data) {
                 console.log(data);
                 if (data["success"]) {
@@ -64,12 +64,19 @@ myTable.on("click", ".deleteBtn", function () {
                 alert(err.statusText)
             }
         })
+        windows.location.reload()
     }
 })
 
 function createProducts() {
+    
+    if (nameField === "" || categoryField === "" || priceField === "" || quantityField === "" || fileUpload === "" || descriptionField === "") {
+        // alert("Fill in All Fields")
+        $(".errorTxt").html("*all fields required");
+        return;
+    }
 
-    let productObj = {"name": nameField.val(), "category": categoryField.val(), "price": priceField.val(), "quantity": quantityField.val(), "image": fileUpload.val(), "description": descriptionField.val() }
+    let productObj = { "name": nameField.val(), "category": categoryField.val(), "price": priceField.val(), "quantity": quantityField.val(), "image": fileUpload.val(), "description": descriptionField.val() }
 
     $.ajax({
         type: "post",
@@ -90,12 +97,14 @@ function createProducts() {
         }
     })
 
+    windows.location.reload()
+
     loadProductsView()
 }
 
 function updateProducts() {
 
-    let productObj = {"name": nameField.val(), "category": categoryField.val(), "price": priceField.val(), "quantity": quantityField.val(), "image": fileUpload.val(), "description": descriptionField.val() }
+    let productObj = { "name": nameField.val(), "category": categoryField.val(), "price": priceField.val(), "quantity": quantityField.val(), "image": fileUpload.val(), "description": descriptionField.val() }
 
     let product_id = listOfProducts[index]["_id"]
 
@@ -133,11 +142,18 @@ function loadProductsView() {
             // listOfProducts = listOfProducts.reverse()
             let row = ""
 
-            for (let i = 0; i < listOfProducts.length; i++) {
-                if (listOfProducts[i].category == "SparkleJumpRopeQueen") {
-                    
-                }
-                
+            for (let i = 0; i < 10; i++) {
+                // if (listOfProducts[i].category == "SparkleJumpRopeQueen") {
+                //     row += `<tr>
+                // <td>${i + 1}</td>
+                // <td>${listOfProducts[i]["name"]}</td>
+                // <td>${listOfProducts[i]["category"]}</td>
+                // <td>${listOfProducts[i]["price"]}</td>
+                // <td>${listOfProducts[i]["quantity"]}</td>
+                // <td>${listOfProducts[i]["description"]}</td>
+                // <td><a href="#" class="editBtn"  index="${i}">Edit</a>  |  <a href="#" class="deleteBtn" index="${i}">Delete</a></td>
+                // </tr>`
+                // }
                 row += `<tr>
                 <td>${i + 1}</td>
                 <td>${listOfProducts[i]["name"]}</td>
@@ -148,7 +164,7 @@ function loadProductsView() {
                 <td><a href="#" class="editBtn"  index="${i}">Edit</a>  |  <a href="#" class="deleteBtn" index="${i}">Delete</a></td>
                 </tr>`
             }
-            myTable.html(row)
+            myTable.append(row)
         },
         error: function (err) {
             console.log(err);
