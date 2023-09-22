@@ -24,9 +24,7 @@ function loadProductsView() {
             listOfProducts = data
             listOfProducts = listOfProducts.reverse()
             let row = ""
-            let i = $(this).attr("index")
-
-            row = listOfProducts[i]
+            
             for (let i = 0; i < listOfProducts.length; i++) {
                 if (listOfProducts[i].category == "SparkleJumpRopeQueen") {
         row += 

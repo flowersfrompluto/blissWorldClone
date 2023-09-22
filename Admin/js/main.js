@@ -137,37 +137,30 @@ function loadProductsView() {
         type: "get",
         url: "http://159.65.21.42:9000/products",
         success: function (data) {
-            console.log(data);
+            // console.log(data);
             listOfProducts = data
             // listOfProducts = listOfProducts.reverse()
             let row = ""
 
-            for (let i = 0; i < 10; i++) {
-                // if (listOfProducts[i].category == "SparkleJumpRopeQueen") {
-                //     row += `<tr>
-                // <td>${i + 1}</td>
-                // <td>${listOfProducts[i]["name"]}</td>
-                // <td>${listOfProducts[i]["category"]}</td>
-                // <td>${listOfProducts[i]["price"]}</td>
-                // <td>${listOfProducts[i]["quantity"]}</td>
-                // <td>${listOfProducts[i]["description"]}</td>
-                // <td><a href="#" class="editBtn"  index="${i}">Edit</a>  |  <a href="#" class="deleteBtn" index="${i}">Delete</a></td>
-                // </tr>`
-                // }
-                row += `<tr>
-                <td>${i + 1}</td>
-                <td>${listOfProducts[i]["name"]}</td>
-                <td>${listOfProducts[i]["category"]}</td>
-                <td>${listOfProducts[i]["price"]}</td>
-                <td>${listOfProducts[i]["quantity"]}</td>
-                <td>${listOfProducts[i]["description"]}</td>
-                <td><a href="#" class="editBtn"  index="${i}">Edit</a>  |  <a href="#" class="deleteBtn" index="${i}">Delete</a></td>
-                </tr>`
+            for (let i = 0; i < listOfProducts.length; i++) {
+                // i=10;
+                if (listOfProducts[i].category == "SparkleJumpRopeQueen") {
+                    row +=
+                    `<tr>
+                    <td>${i + 1}</td>
+                    <td>${listOfProducts[i]["name"]}</td>
+                    <td>${listOfProducts[i]["category"]}</td>
+                    <td>${listOfProducts[i]["price"]}</td>
+                    <td>${listOfProducts[i]["quantity"]}</td>
+                    <td>${listOfProducts[i]["description"]}</td>
+                    <td><a href="#" class="editBtn"  index="${i}">Edit</a>  |  <a href="#" class="deleteBtn" index="${i}">Delete</a></td>
+                    </tr>`
+                }
             }
             myTable.append(row)
         },
         error: function (err) {
-            console.log(err);
+            // console.log(err);
             alert(err.statusText)
         }
     })
